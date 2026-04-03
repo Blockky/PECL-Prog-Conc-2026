@@ -1,0 +1,39 @@
+
+- Los niños deben ser modelados obligatoriamente como hilos y se identificarán como
+    “NXXXX”, donde X es un número (id) único como, por ejemplo, N0001, N0023, N1234, etc.
+
+- Por seguridad, todos los niños iniciarán su actividad en la CALLE PRINCIPAL de Hawkins.
+    Una vez incorporados, repetirán iterativamente el siguiente ciclo de comportamiento:
+
+    - Accederán al SÓTANO DE LOS BYERS, donde se prepararán para la exploración del
+        Upside Down. Permanecerán un tiempo aleatorio entre 1 y 2 segundos.
+
+    - Desde el SÓTANO DE LOS BYERS, seleccionarán un PORTAL para salir al Upside
+        Down y esperarán hasta formar un grupo del tamaño requerido por ese portal concreto (2
+        para el portal que lleva al BOSQUE, 3 para el portal que lleva al LABORATORIO, 4 para
+        el portal que lleva al CENTRO COMERCIAL y 2 para el portal que lleva al
+        ALCANTARILLADO). Una vez formado el grupo, cada niño cruzará el portal de uno en
+        uno (tiempo estimado: 1 segundo). El grupo es exclusivo: si llegara un niño adicional
+        mientras se está formando el grupo o cruzando, deberá esperar para formar el siguiente
+        grupo.
+
+    - En el Upside Down estarán un tiempo aleatorio entre 3 y 5 segundos y cada uno recolectará
+        1 unidad de sangre de Vecna. Cuando un niño recoge la sangre y no ha sido atacado,
+        regresará al portal para volver a Hawkins sin esperar a sus compañeros.
+
+    - Si un niño es atacado por un demogorgon, intentará resistir durante todo el ataque. La
+        duración del ataque la marca el demogorgon, por lo que el niño no puede reanudar su
+        marcha hasta que el ataque finalice. Las probabilidades de resistir el ataque son de 2/3.
+
+    - Si la resistencia falla, el niño es CAPTURADO por el demogorgon y es llevado a la COLMENA.
+
+    - El demogorgon que capturó al niño incrementa su contador de capturas. Mientras el niño
+        está capturado, el demogorgon puede seguir atacando a otros niños en la misma zona.
+
+    - Una vez de vuelta en Hawkins, depositarán automáticamente la sangre recolectada y
+        acudirán a la RADIO WSQK, permaneciendo un tiempo aleatorio entre 2 y 4 segundos.
+
+    - Tras el descanso, van a la CALLE PRINCIPAL y deambulan por ella entre 3 y 5 segundos
+        para no levantar sospechas entre el ejército.
+        
+    - Finalizadas estas actividades, regresan al SÓTANO BYERS para repetir el ciclo.

@@ -1,0 +1,15 @@
+
+- Todo el comportamiento del sistema se mostrará gráficamente por pantalla mediante una
+    interfaz de usuario Java. Se incluirá un botón para pausar/reanudar el sistema. La interfaz
+    mostrara el estado en tiempo real de cada zona, los niños y demogorgons presentes, la sangre
+    disponible y el estado del evento global activo (si lo hay).
+
+- El funcionamiento de todos los niños y los demogorgons no finaliza nunca.
+
+- Los niños llevan consigo un Walkie-Talkie, por lo que informarán todo el tiempo sobre el
+    comportamiento del sistema y se guardará en un fichero log llamado "hawkins.txt". En cada
+    línea constara la marca de tiempo (fecha y hora con segundo exacto) y el evento. Ejemplos:
+    "El demogorgon D0002 ataca al niño N1234 (capturas: 2)", "El niño N4567 ha sido
+    capturado", "EVENTO GLOBAL: Apagón del Laboratorio iniciado". El sistema de log se
+    implementará como recurso compartido y estará protegido adecuadamente.
+    

@@ -1,0 +1,23 @@
+
+- Todos los demogorgons del sistema deben ser modelados obligatoriamente como hilos y se
+    identificarán como “DXXXX”, donde X es un número (id) único como, por ejemplo, D0001, D0023,
+    D1234, etc. El único demogorgon generado inicialmente (el Demogorgon Alpha), tendrá como id
+    “D0000”.
+
+- Los demogorgons se moverán entre las distintas áreas inseguras del Upside Down en busca de
+    niños, desplazándose de una a otra de forma aleatoria. Al llegar a un área, comprobarán si hay algún
+    niño presente: si existe al menos uno, seleccionarán un objetivo aleatoriamente e intentarán
+    capturarlo, proceso que tendrá una duración aleatoria de entre 0,5 y 1,5 segundos. 
+    
+    - Si el ataque tiene éxito, el niño será trasladado a la COLMENA, una vez dentro, tardará un tiempo
+        aleatorio entre 0,5 y 1 segundos en depositar al niño, y se incrementará el contador de capturas
+        del demogorgon.
+    - Si por el contrario el ataque fracasa, el niño permanecerá en el área. En cualquiera de los dos 
+        casos, tras el ataque, el demogorgon se desplazará aleatoriamente a otra área insegura.
+    - Por el contrario, si al llegar al área no hay ningún niño presente, el demogorgon permanecerá en
+        ella durante un tiempo aleatorio de entre 4 y 5 segundos antes de desplazarse aleatoriamente a
+        otra área insegura y repetir el proceso.
+
+- Por cada 8 niños capturados en la COLMENA, Vecna generará un nuevo demogorgon.
+    Este comportamiento se repite indefinidamente.
+    

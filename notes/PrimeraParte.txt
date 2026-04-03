@@ -1,0 +1,22 @@
+
+- En el sistema existen dos tipos de usuarios: niños y demogorgons.
+
+- Existen dos dimensiones interconectadas: el mundo normal de Hawkins, que actúa como
+    zona segura, y el Upside Down, la dimensión donde deambulan los demogorgons.
+
+- El Upside Down cuenta con 4 zonas inseguras diferenciadas (BOSQUE, LABORATORIO,
+    CENTRO COMERCIAL Y ALCANTARILLADO). Además, existe una zona denominada
+    COLMENA que servirá como almacén de víctimas.
+
+- Los niños deberán ser creados (instanciados) de forma escalonada (es decir, deben ser
+    creados paulatinamente) en intervalos aleatorios de entre 0,5 y 2 segundos. Los niños
+    iniciarán su vida en la Calle Principal de Hawkins.
+
+- Hay 4 PORTALES que conectan Hawkins con cada una de las zonas inseguras. Por cada
+    portal solo puede circular un único niño a la vez. En caso de existir niños en ambos lados
+    del portal, tendrá prioridad siempre el que intente regresar a Hawkins.
+
+- La ciudad de Hawkins cuenta con 3 zonas diferenciadas: CALLE PRINCIPAL, SÓTANO
+    BYERS, y RADIO WSQK.
+
+- El sistema generará 1.500 niños y 1 demogorgon inicial (el Demogorgon Alpha).

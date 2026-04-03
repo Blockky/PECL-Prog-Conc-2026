@@ -1,0 +1,35 @@
+
+- El sistema generará de forma periódica eventos globales que afectarán al comportamiento de todos
+    los hilos activos de forma simultánea.
+
+- Los eventos ocurren en intervalos aleatorios de entre 30 y 60 segundos desde el inicio del sistema
+    y desde la finalización del evento anterior. Es decir, cada 30 – 60 segundos ocurrirá un nuevo evento.
+
+- Cada evento tiene una duración aleatoria de entre 5 y 10 segundos. Los tipos de eventos posibles
+    son:
+
+    - APAGÓN DEL LABORATORIO:
+        - Todos los portales quedan inutilizables temporalmente (ningún niño podrá
+            cruzarlos). Los niños que ya estén en tránsito por un portal finalizan su cruce
+            normalmente. Los que estuvieran esperando para cruzar deben esperar hasta que el
+            apagón finalice.
+        - Los demogorgons seguirán atacando a los niños, pero no pueden cambiar de zona
+            durante el apagón y permanecen en la zona donde se encuentran.
+
+    - TORMENTA DEL UPSIDE DOWN:
+        - El tiempo de recolección de sangre de todos los niños en el Upside Down se duplica
+            durante el evento.
+        - Los demogorgons se vuelven más agresivos: el tiempo entre ataques se reduce a la
+            mitad.
+
+    - INTERVENCIÓN DE ELEVEN:
+        - Eleven usa sus poderes para liberar tantos niños capturados en la COLMENA como
+            unidades de sangre de Vecna hayan sido recolectadas en ese tiempo, y regresan a
+            la CALLE PRINCIPAL de Hawkins.
+        - Durante este evento, todos los demogorgons quedan paralizados (no atacan ni se
+            mueven) durante la duración del evento.
+
+    - LA RED MENTAL:
+        - El Mindflayer conecta psíquicamente con todos los demogorgons activos durante
+            el tiempo que dura el evento. Mientras dura la conexión, todos los demogorgon se
+            dirigen a la zona en la que más niños haya en ese momento.
